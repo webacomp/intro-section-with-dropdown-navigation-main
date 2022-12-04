@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+
+		<title>Frontend Mentor | Intro section with dropdown navigation</title>
+		<link rel="stylesheet" href="files/main.css" />
+		<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+		<script src="main.js" defer></script>
+	</head>
+	<body>
+		<div class="container">
+			<header class="header">
+				<div class="header__content">
+					<div class="logo">
+						<img class="logo__img" src="images/logo.svg" alt="Logo" />
+					</div>
+				</div>
+
+				<nav id="nav" class="nav">
+					<div class="hamburger">
+						<img
+							class="open"
+							id="opened"
+							src="images/icon-menu.svg"
+							data-state="opened"
+							alt="Menu open"
+							aria-expanded="false"
+						/>
+						<img
+							class="close"
+							id="closed"
+							src="images/icon-close-menu.svg"
+							alt="Menu close"
+							aria-expanded="false"
+						/>
+					</div>
+					<!-- <button
+						id="btn"
+						class="menu-toggle"
+						aria-label="Menu"
+						aria-controls="primary-navigation"
+						aria-expanded="false"
+					>
+						<span class="visually-hidden">Menu</span>
+						<div class="hamburger" aria-hidden="true">
+							<img src="images" alt="" />
+						</div>
+					</button> -->
+					<ul
+						class="primary-navigation list"
+						id="primary-navigation"
+						data-state="closed"
+					>
+						<div class="row-list">
+							<li class="item features">
+								<div class="row">
+									<a class="head-link" href="#">Features </a>
+								 <a class="arrow-btn"><img class="arrow-1" src="images/icon-arrow-up.svg" alt="" /></a>	
+								</div>
+
+								<ul class="dropdown dropdown-1">
+									<li class="item">
+										<img src="images/icon-todo.svg" alt="" />
+										<a class="link" href="#">Todo-List</a>
+									</li>
+									<li class="item">
+										<img src="images/icon-calendar.svg" alt="" />
+										<a class="link" href="#">Calender</a>
+									</li>
+									<li class="item">
+										<img src="images/icon-reminders.svg" alt="" />
+										<a class="link" href="#">Reminders</a>
+									</li>
+									<li class="item">
+										<img src="images/icon-planning.svg" alt="" />
+										<a class="link" href="#">Planning</a>
+									</li>
+								</ul>
+							</li>
+
+							<li class="item company">
+								<div class="row">
+									<a class="head-link" href="#"> Company</a>
+									<a class="arrow-btn" href=""><img class="arrow-2" src="images/icon-arrow-up.svg" alt="" /></a>
+								</div>
+
+								<ul class="dropdown dropdown-2">
+									<li class="company__item">
+										<a class="link company-link" href="#">History</a>
+									</li>
+									<li class="company__item">
+										<a class="link company-link" href="#">Our Team</a>
+									</li>
+									<li class="company__item">
+										<a class="link company-link" href="#">Blog</a>
+									</li>
+								</ul>
+							</li>
+
+							<li class="item"><a class="head-link" href="#">Careers</a></li>
+							<li class="item"><a class="head-link" href="#">About</a></li>
+						</div>
+
+						<div id="btns" class="nav__btns translate">
+							<button
+								id="btn"
+								class="nav__btn nav__btn-blank"
+								data-state="closed"
+							>
+								Login
+							</button>
+							<button
+								id="btn"
+								class="nav__btn nav__btn-colored"
+								data-state="closed"
+							>
+								Register
+							</button>
+						</div>
+					</ul>
+				</nav>
+			</header>
+		</div>
+		<main class="main">
+			<div class="flow">
+				<section class="hero">
+					<div class="hero__img">
+						<img
+							class="hero__img-mobile"
+							src="images/image-hero-mobile.png"
+							alt=""
+						/>
+						<img
+							class="hero__img-desktop"
+							src="images/image-hero-desktop.png"
+							alt=""
+						/>
+					</div>
+				</section>
+
+				<section class="content container">
+					<article class="content__art">
+						<h1 class="content__title">Make remote work</h1>
+						<p class="content__subtitle">
+							Get your team in sync, no matter your location. Streamline
+							processes, create team rituals, and watch productivity soar.
+						</p>
+						<button
+							id="btn"
+							class="btn menu-toggle"
+							aria-label="Menu"
+							aria-controls="primary-navigation"
+							aria-expanded="false"
+						>
+							Learn more
+						</button>
+					</article>
+				</section>
+			</div>
+			<section class="client">
+				<div class="client__box">
+					<div class="client__row">
+						<img class="client__img" src="images/client-databiz.svg" alt="Databiz" />
+						<img class="client__img" src="images/client-audiophile.svg" alt="Audiophile" />
+						<img class="client__img" src="images/client-meet.svg" alt="Meet" />
+						<img class="client__img" src="images/client-maker.svg" alt="Maker" />
+					</div>
+				</div>
+			</section>
+		</main>
+	</body>
+</html>
